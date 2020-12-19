@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <!-- html문서의 인코딩 또는 브라우저 실행시 title값 등 설정 -->
+      <meta charset="UTF-8">
+      <title>Insert title here</title>
+   </head>
+   
+   <body>
+      <!-- 실제 화면에 보이는 부분 -->
+      
+      <!-- id.pw를 한 문장씩 입력 + 전송버튼 클릭 => 입력된 두개의 데이터를 encore01이라는 servlet에게 전송 -->
+      <form action="encore01" method="post">
+         아이디 : <input type="text" name="id"> <br>
+         패스워드 : <input type="password" name="pw"> <br>
+         
+         이름 : <input type="text" name="name"><br>
+         
+         <input type="submit" value="로그인">
+      </form>
+      
+      <br><hr><br>
+      데이터 공유 기술 학습<br>
+      
+         <form action="A" method="post"> <!--  한글은 post가 좋음. get인 경우 때떄로 꺠짐 -->
+         아이디 : <input type="text" name="id"> <br>
+         이름 : <input type="text" name="name"><br>
+         
+         <input type="submit" value="로그인">
+      </form>
+         
+   </body>
+</html>
+<!-- 
+http://ip:port/project명/login.html
+   id.pw.submit 버튼 클릭
+http://ip:port/project명/encore01
+
+post
+   - http://localhost/step01_basic/encore01
+
+get
+   - http://localhost/step01_basic/encore01?id=test&pw=11
+
+ -->
